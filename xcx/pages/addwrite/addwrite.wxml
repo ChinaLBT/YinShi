@@ -1,10 +1,14 @@
 <!--pages/addwrite/addwrite.wxml-->
 <view class='all'>
-  <view class='title'>《<input placeholder='诗题' bindinput='InputTitle' />》</view>
-  <view class='zuo'>作<input placeholder='{{userInfo.nickName}}\t\t(默认微信昵称)' bindinput='InputUser' /></view>
+  <image class='poetry_img' src='../../images/poetry.jpg'></image>
+  <view class='title'>《
+    <input placeholder='诗题' bindinput='InputTitle' />》</view>
+  <view class='zuo'>作
+    <input placeholder='{{userInfo.nickName}}\t\t(默认微信昵称)' bindinput='InputUser' />
+  </view>
   <view class='tishi'>*注意排版，点击预览后在预览页中发布</view>
   <view class='font'>
-  <textarea placeholder="请输入内容" bindinput='InputContent' />
+    <textarea placeholder="请输入内容" bindinput='InputContent' />
   </view>
   <view class='yulan' bindtap='ClickSendwrite'>预览</view>
 </view>

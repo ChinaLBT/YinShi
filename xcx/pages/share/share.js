@@ -26,8 +26,8 @@ Page({
   },
 
   ClickIndex: function () {
-    wx.switchTab({
-      url: '/pages/index/index',
+    wx.redirectTo({
+      url: '../start/start',
     })
   }
 })

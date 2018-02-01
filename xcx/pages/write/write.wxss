@@ -1,17 +1,16 @@
 /* pages/write/write.wxss */
-page {
-  background: url('http://i4.bvimg.com/628839/be83b8a33a3818f8s.jpg') round;
-  background-attachment:fixed;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 .all {
   width: 100vw;
   height: 100%;
   flex-direction: column;
   position: absolute;
+}
+
+.write_img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
 }
 
 .want {
@@ -20,15 +19,23 @@ page {
   margin: 0 5%;
   border: 1rpx solid #000;
   box-shadow: 2px 2px 3px #000;
-  text-align: center;
   line-height: 80rpx;
   border-radius: 20rpx;
   position: fixed;
   top: 0;
-  background: url('http://i2.bvimg.com/628839/edc403ee3efc5dc3s.jpg');
-  background-size: 100%;
   letter-spacing:55rpx;
   font-size: 50rpx;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.want_img {
+  height: 80rpx;
+  width: 90%;
+  position: fixed;
+  border-radius: 20rpx;
+  z-index: -1;
 }
 
 .shua {
@@ -45,8 +52,15 @@ page {
   box-shadow: 2px 2px 3px #000;
   flex-direction: row;
   display: flex;
-  background: url("http://i1.bvimg.com/628839/2912bc09923dac2c.jpg");
-  background-size: 100%;
+}
+
+.content_img {
+  margin: -10rpx;
+  height: 120rpx;
+  width: 88%;
+  position: absolute;
+  border-radius: 20rpx;
+  z-index: -1;
 }
 
 .img {

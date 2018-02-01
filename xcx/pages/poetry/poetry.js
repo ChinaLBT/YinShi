@@ -65,13 +65,11 @@ Page({
   },
 
   ClickChang: function () {
-    console.log(this.data.data_num)
     if (this.data.data_num < 5) {
       this.setData({ data_num: (this.data.data_num) * 1 + 1 })
     }
     else {
       this.setData({ data_num: 0 })
     }
-    console.log(this.data.data_num)
   }
 })

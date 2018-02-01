@@ -1,5 +1,6 @@
 <!--pages/create/create.wxml-->
 <view class='all'>
+  <image class='index_img' src='../../images/index.jpg'></image>
   <view class='input_all'>
     <view class='input'>
       <label>诗意</label>

@@ -1,9 +1,13 @@
 <!--pages/write/write.wxml-->
 <view class='all'>
-  <view class='want' bindtap='ClickAdd'>我要写诗</view>
+  <image class='write_img' src='../../images/write.jpg'></image>
+  <view class='want' bindtap='ClickAdd'>
+  <image class='want_img' src='../../images/want.jpg'></image>
+  <text>我要写诗</text></view>
   <view style='margin-top:100rpx;'>
-  <view class='shua'>-----------下拉刷新------------</view>
-    <view class='content' bindtap='ClickLook' wx:for="{{write}}"  id='{{index}}'>
+    <view class='shua'>-----------下拉刷新------------</view>
+    <view class='content' bindtap='ClickLook' wx:for="{{write}}" id='{{index}}'>
+    <image class='content_img' src='../../images/content.jpg'></image>
       <image class='img' src='{{item.avatarUrl}}'></image>
       <view>
         <view class='title'>《{{item.title}}》</view>
@@ -12,6 +16,6 @@
     </view>
   </view>
   <loading hidden="{{hidden}}">
-  加载中...
- </loading>
+    加载中...
+  </loading>
 </view>

@@ -7,6 +7,7 @@
   <view class='footer'>
     <image wx:if="{{userInfo != ''}}" class='img' src='{{userInfo.avatarUrl}}'></image>
     <image wx:else class='img' src='../../images/name.png'></image>
+    <image src='../../images/start_font.png'></image>
     <view class='start' bindtap='Index'>立即体验</view>
   </view>
 </view>

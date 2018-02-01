@@ -1,12 +1,18 @@
 /* pages/poetry/poetry.wxss */
 .all {
-  background: url("http://i2.bvimg.com/628839/bd2775d9e2d2de96.jpg") round;
   position: fixed;
   width: 100%;
   height: 100%;
   flex-direction: column;
   display: flex;
   align-items: center;
+}
+
+.poetry_img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
 }
 
 .five {

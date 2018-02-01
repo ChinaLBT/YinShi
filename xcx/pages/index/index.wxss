@@ -1,13 +1,20 @@
 /* pages/create/create.wxss */
 .all {
-  background: url("http://i4.bvimg.com/628839/3211ff183b664f40s.jpg") round;
   background-attachment: fixed;
   position: fixed;
   width: 100%;
   height: 100%;
 }
 
+.index_img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
 .input_all {
+  z-index: 1;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -15,8 +22,8 @@
 }
 
 .input {
+  z-index: 2;
   color: #000;
-
   width: 400rpx;
   border: 1px solid #000;
   font-size: 28rpx;

@@ -1,5 +1,6 @@
 <!--pages/poetry/poetry.wxml-->
 <view class='all'>
+  <image class='poetry_img' src='../../images/poetry.jpg'></image>
   <view wx:if="{{num==5}}">
     <view class='five font'>{{data[data_num]}}</view>
   </view>
@@ -10,6 +11,6 @@
   <view class='chang' bindtap='ClickChang'>换一个</view>
   <text class='fenxiang'>*点击右上角可分享给好友哦</text>
   <loading hidden="{{hidden}}">
-  生成中...
- </loading>
+    生成中...
+  </loading>
 </view>

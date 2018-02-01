@@ -54,7 +54,7 @@
 }
 
 .start {
-  margin-top: 100rpx;
+  margin-top: 50rpx;
   padding: 20rpx;
   width: 300rpx;
   text-align: center;
