@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/write/write",
+    "pages/poetry/poetry",
+    "pages/lookwrite/lookwrite",
+    "pages/addwrite/addwrite",
+    "pages/share/share",
+    "pages/sendwrite/sendwrite"
+    
+  ],
+  "window": {
+    "navigationStyle":"custom ",
+    "navigationBarBackgroundColor": "#f1ede4",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "饮诗",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "selectedColor": "#000",
+    "borderStyle":"#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "生成诗词",
+      "iconPath": "images/sheng.png",
+      "selectedIconPath": "images/sheng1.png"
+    },
+    {
+      "pagePath": "pages/write/write",
+      "text": "原创诗词",
+      "iconPath": "images/xie.png",
+      "selectedIconPath": "images/xie1.png"
+    }
+    ]
+  }
+}

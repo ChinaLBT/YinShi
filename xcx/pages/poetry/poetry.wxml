@@ -1,0 +1,15 @@
+<!--pages/poetry/poetry.wxml-->
+<view class='all'>
+  <view wx:if="{{num==5}}">
+    <view class='five font'>{{data[data_num]}}</view>
+  </view>
+  <view wx:if="{{num==7}}">
+    <view class='seven font'>{{data[data_num]}}</view>
+  </view>
+  <view class='zuo'>作/{{user}}</view>
+  <view class='chang' bindtap='ClickChang'>换一个</view>
+  <text class='fenxiang'>*点击右上角可分享给好友哦</text>
+  <loading hidden="{{hidden}}">
+  生成中...
+ </loading>
+</view>

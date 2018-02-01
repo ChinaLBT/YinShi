@@ -1,0 +1,17 @@
+<!--pages/write/write.wxml-->
+<view class='all'>
+  <view class='want' bindtap='ClickAdd'>我要写诗</view>
+  <view style='margin-top:100rpx;'>
+  <view class='shua'>-----------下拉刷新------------</view>
+    <view class='content' bindtap='ClickLook' wx:for="{{write}}"  id='{{index}}'>
+      <image class='img' src='{{item.avatarUrl}}'></image>
+      <view>
+        <view class='title'>《{{item.title}}》</view>
+        <view class='time'>{{item.day_time}}</view>
+      </view>
+    </view>
+  </view>
+  <loading hidden="{{hidden}}">
+  加载中...
+ </loading>
+</view>

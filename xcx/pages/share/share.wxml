@@ -1,0 +1,19 @@
+<!--pages/share/share.wxml-->
+<view class='all'>
+  <view wx:if="{{num==5}}">
+    <view class='five font'>{{data}}</view>
+  </view>
+  <view wx:if="{{num==7}}">
+    <view class='seven font'>{{data}}</view>
+  </view>
+  <view wx:if="{{num==''}}">
+    <view style='text-align: center;margin-top: 20rpx;'>
+    <text>《{{title}}》</text>
+    <view class='seven font' style='font-size:34rpx;margin-top: 60rpx;line-height: 80rpx;'>
+      <text>{{content}}</text>
+    </view>
+  </view>
+  </view>
+  <view class='zuo'>作/{{user}}</view>
+  <view class='chang' bindtap='ClickIndex' style='left:35%;right:35%'>我要制作</view>
+</view>

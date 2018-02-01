@@ -1,0 +1,12 @@
+<!--pages/start/start.wxml-->
+<view class='all'>
+  <view class='header'>
+    <view class='color'></view>
+    <image src='../../images/start_name.png'></image>
+  </view>
+  <view class='footer'>
+    <image wx:if="{{userInfo != ''}}" class='img' src='{{userInfo.avatarUrl}}'></image>
+    <image wx:else class='img' src='../../images/name.png'></image>
+    <view class='start' bindtap='Index'>立即体验</view>
+  </view>
+</view>

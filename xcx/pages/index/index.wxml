@@ -1,0 +1,55 @@
+<!--pages/create/create.wxml-->
+<view class='all'>
+  <view class='input_all'>
+    <view class='input'>
+      <label>诗意</label>
+      <input placeholder="请输入诗意(最多八个字)" bindinput='InputKey' />
+    </view>
+    <view class='input'>
+      <label>作者</label>
+      <input placeholder="{{userInfo.nickName}}\t\t(默认微信昵称)" bindinput='InputUser' />
+    </view>
+    <view class='input'>
+      <label>体裁</label>
+      <picker bindchange="ChangNum" value="{{Num_Index}}" range="{{Num}}" range-key="name">
+        <view>
+          当前选择：{{Num[Num_Index].name}}
+        </view>
+      </picker>
+    </view>
+    <view class='input'>
+      <label>类型</label>
+      <picker bindchange="ChangType" value="{{Type_Index}}" range="{{Type}}" range-key="name">
+        <view>
+          当前选择：{{Type[Type_Index].name}}
+        </view>
+      </picker>
+    </view>
+    <view class='input'>
+      <label>押韵</label>
+      <picker bindchange="ChangYayun" value="{{Yayun_Index}}" range="{{Yayun}}" range-key="name">
+        <view>
+          当前选择：{{Yayun[Yayun_Index].name}}
+        </view>
+      </picker>
+    </view>
+    <view class='tijiao' bindtap='ClickTijiao'>开始生成</view>
+    <view class='shang' wx:if="{{shang == 1}}">
+      <image src='../../images/shang.jpg'></image>
+      <view class='font'>
+        <view>因功能限制不能直接赏赞</view>
+        <view>点击下方"确定"将保存图片，之后可用微信识别打赏</view>
+        <view>点击"确定"将保存图片，是否确定？</view>
+      </view>
+      <view class='other' style='margin-top:20rpx;'>
+        <button style='width:200rpx;' bindtap='YesShang'>确定</button>
+        <button style='width:200rpx;' bindtap='NoShang'>取消</button>
+      </view>
+    </view>
+    <view class='other'>
+      <button class='lx' open-type='contact'>联系客服</button>
+      <button class='lx' bindtap='ClickShang'>打赏我们</button>
+    </view>
+  </view>
+
+</view>

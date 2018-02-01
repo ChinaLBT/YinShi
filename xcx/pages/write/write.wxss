@@ -1,0 +1,71 @@
+/* pages/write/write.wxss */
+page {
+  background: url('http://i4.bvimg.com/628839/be83b8a33a3818f8s.jpg') round;
+  background-attachment:fixed;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.all {
+  width: 100vw;
+  height: 100%;
+  flex-direction: column;
+  position: absolute;
+}
+
+.want {
+  width: 90%;
+  height: 80rpx;
+  margin: 0 5%;
+  border: 1rpx solid #000;
+  box-shadow: 2px 2px 3px #000;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 20rpx;
+  position: fixed;
+  top: 0;
+  background: url('http://i2.bvimg.com/628839/edc403ee3efc5dc3s.jpg');
+  background-size: 100%;
+  letter-spacing:55rpx;
+  font-size: 50rpx;
+}
+
+.shua {
+  text-align: center;
+  font-size: 22rpx;
+}
+
+.content {
+  width: 85%;
+  padding: 10rpx;
+  margin: 10rpx 6%;
+  border: 1rpx solid #000;
+  border-radius: 10rpx;
+  box-shadow: 2px 2px 3px #000;
+  flex-direction: row;
+  display: flex;
+  background: url("http://i1.bvimg.com/628839/2912bc09923dac2c.jpg");
+  background-size: 100%;
+}
+
+.img {
+  border: 1rpx solid #000;
+  border-radius: 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.title {
+  margin-left: 5rpx;
+  height: 50rpx;
+  font-size: 42rpx;
+  line-height: 50rpx;
+}
+
+.time {
+  margin-left: 25rpx;
+  height: 50rpx;
+  font-size: 24rpx;
+  line-height: 70rpx;
+}
