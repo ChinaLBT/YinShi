@@ -29,32 +29,17 @@ Page({
     }
   },
 
-  ClickAdd: function () {
-    wx.navigateTo({
-      url: '../addwrite/addwrite',
-    })
-  },
-
-  ClickLook: function (sendid) {
-    var nums = this.data.write[sendid.currentTarget.id];
-    console.log(nums)
-    console.log(sendid.currentTarget.id)
-    wx.navigateTo({
-      url: '../lookwrite/lookwrite?title=' + nums.title + '&content=' + nums.content + '&user=' + nums.user,
-    })
-  },
-
   LoadWrite: function () {
     var that = this;
     wx.request({
-      url: 'https://wx.92see.cn/xieshi/Write.php',
+      url: 'https://wx.92see.cn/xieshi/Today.php',
       header: {
         'content-type': 'application/json'
       },
       success: function (res) {
-        console.log(res.data)
+        console.log(res.data.showapi_res_body.list)
         that.setData({
-          write: res.data,
+          write: res.data.showapi_res_body.list,
           hidden: true
         })
         if (that.data.shuaxin == '1') {
@@ -73,6 +58,5 @@ Page({
         })
       }
     })
-    console.log(this.data.write)
   }
 })

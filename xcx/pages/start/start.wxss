@@ -34,7 +34,7 @@
   height: 70%;
   position:relative;
   background: blue;
-  animation: on 2.5s;
+  animation: on 2s;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -55,8 +55,8 @@
 
 .start {
   margin-top: 50rpx;
-  padding: 20rpx;
-  width: 300rpx;
+  padding: 30rpx;
+  width: 400rpx;
   text-align: center;
   border-radius: 40rpx;
   background: #fff;

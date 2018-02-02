@@ -1,17 +1,12 @@
 <!--pages/write/write.wxml-->
 <view class='all'>
   <image class='write_img' src='../../images/write.jpg'></image>
-  <view class='want' bindtap='ClickAdd'>
-  <image class='want_img' src='../../images/want.jpg'></image>
-  <text>我要写诗</text></view>
-  <view style='margin-top:100rpx;'>
+  <view>
     <view class='shua'>-----------下拉刷新------------</view>
-    <view class='content' bindtap='ClickLook' wx:for="{{write}}" id='{{index}}'>
-    <image class='content_img' src='../../images/content.jpg'></image>
-      <image class='img' src='{{item.avatarUrl}}'></image>
+    <view class='content' wx:for="{{write}}">
       <view>
-        <view class='title'>《{{item.title}}》</view>
-        <view class='time'>{{item.day_time}}</view>
+        <view class='title'>{{item.year}}年</view>
+        <view class='time'>{{item.title}}</view>
       </view>
     </view>
   </view>

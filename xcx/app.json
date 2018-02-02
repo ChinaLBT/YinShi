@@ -4,10 +4,7 @@
     "pages/index/index",
     "pages/write/write",
     "pages/poetry/poetry",
-    "pages/lookwrite/lookwrite",
-    "pages/addwrite/addwrite",
-    "pages/share/share",
-    "pages/sendwrite/sendwrite"
+    "pages/share/share"
     
   ],
   "window": {
@@ -30,7 +27,7 @@
     },
     {
       "pagePath": "pages/write/write",
-      "text": "原创诗词",
+      "text": "历史今日",
       "iconPath": "images/xie.png",
       "selectedIconPath": "images/xie1.png"
     }
